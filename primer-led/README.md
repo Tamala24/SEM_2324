@@ -2,7 +2,7 @@
 
 This is project consists in the application of the standard GPIO for switching on and off a LED.
 
-## Button folder contents
+## Primer-led folder contents
 
 The project **primer-led** contains three files: two source files in C language [main.c](main/main.c) and [led.c](main/led.c), and one header file [led.h](main/led.h). The files are located in folder [main](main).
 
