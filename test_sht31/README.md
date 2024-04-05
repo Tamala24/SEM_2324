@@ -1,23 +1,12 @@
-# _Sample project_
+# _Test_sht31 project_
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+This is project consists in the application of the standard GPIO for reading the values of a Humiture-Temperature sensor sht31.
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+## Test_sht31 folder contents
 
+The project **test_sht31** contains five files: three source files in C language [main.c](main/main.c), [i2c_bus.c](main/i2c_bus.c) and [sht3x.c](main/sht3x.c), and two header file [i2c_bus.h](main/i2c_bus.h) and [sht3x.h](main/sht3x.h). The files are located in folder [main](main).
 
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
-
-## Example folder contents
-
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
+ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt` files.
 
 Below is short explanation of remaining files in the project folder.
 
@@ -25,8 +14,10 @@ Below is short explanation of remaining files in the project folder.
 ├── CMakeLists.txt
 ├── main
 │   ├── CMakeLists.txt
+│   ├── i2c_bus.c
+│   ├── sht3x.c
+│   ├── i2c_bus.h
+│   ├── sht3x.h
 │   └── main.c
 └── README.md                  This is the file you are currently reading
 ```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
